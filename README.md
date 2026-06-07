@@ -1,6 +1,6 @@
-# Table of contents
+# Table of Contents
 
-* [1. client and server lab](#client and server lab)
+- [1. Client and Server Lab](#client-and-server-lab)
 # client and server lab
 ## first step create a folder
 

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "27b67e490077a4a5",
+        "id": "4a17a83738fd87f6",
         "type": "tabs",
         "children": [
           {
-            "id": "3bdd6a5903a2c303",
+            "id": "845f04431e87dd17",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,8 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "b7c634b36c8d5d44",
+  "active": "845f04431e87dd17",
   "lastOpenFiles": [
+    "client-and-server-lab.md",
+    "README.md",
     "ClientandServerUDPlab/labCode/Server/obj/Debug/net8.0/Server.csproj.FileListAbsolute.txt",
     "ClientandServerUDPlab/labCode/Server/bin/Debug/net8.0/Server.pdb",
     "ClientandServerUDPlab/labCode/Server/obj/Debug/net8.0/ref/Server.dll",
@@ -195,8 +197,6 @@
     "ClientandServerUDPlab/labCode/Server/bin/Debug/net8.0/Server",
     "ClientandServerUDPlab/labCode/Server/obj/Debug/net8.0/apphost",
     "ClientandServerUDPlab/labCode/Server/obj/Debug/net8.0/refint/Server.dll",
-    "ClientandServerUDPlab/labCode/Server/obj/Debug/net8.0/Server.pdb",
-    "ClientandServerUDPlab/simple lab documentation.md",
-    "README.md"
+    "ClientandServerUDPlab/simple lab documentation.md"
   ]
 }
