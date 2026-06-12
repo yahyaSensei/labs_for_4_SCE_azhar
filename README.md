@@ -1,6 +1,7 @@
 # Table of Contents
 
 - [1. Client and Server Lab](#client-and-server-lab)
+- [2. react Lab](#react-Lab)
 # client and server lab
 ## first step create a folder
 
@@ -129,4 +130,84 @@ dotnet run
 cd Client
 
 dotnet run
+```
+
+
+# react Lab
+
+
+
+```JS 
+
+import React, { useState, useEffect } from "react";
+
+  
+
+function App() {
+
+  const [employee, setemployee] = useState([]);
+
+  const [newname, setnewname] = useState("");
+
+  useEffect(() => {
+
+    fetch("https://jsonplaceholder.typicode.com/users")
+
+      .then((response) => response.json())
+
+      .then((data) => setemployee(data));
+
+  }, []);
+
+  
+
+  const addemployee = () => {
+
+    fetch("https://jsonplaceholder.typicode.com/users", {
+
+      method: "POST",
+
+      headers: { "Content-Type": "application/json" },
+
+      body: JSON.stringify({ name: newname }),
+
+    })
+
+      .then((res) => res.json())
+
+      .then((newEmp) => {
+
+        setemployee([...employee, newEmp]);
+
+        setnewname("");
+
+      });
+
+  };
+
+  
+
+  return (
+
+    <p>
+
+      {employee.map((emp) => (
+
+        <p key={emp.id}>{emp.name}</p>
+
+      ))}
+
+      <input value={newname} onChange={(e) => setnewname(e.target.value)} />
+
+      <button onClick={addemployee}>add</button>
+
+    </p>
+
+  );
+
+}
+
+  
+
+export default App;
 ```
